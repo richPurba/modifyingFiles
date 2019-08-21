@@ -1,4 +1,7 @@
 # modifyingFiles
+
+[![Join the chat at https://gitter.im/modifyingFiles/community](https://badges.gitter.im/modifyingFiles/community.svg)](https://gitter.im/modifyingFiles/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A repo for anything to modify your files
 
 # What is this?
