@@ -1,12 +1,23 @@
+package org.MainEntry;
+
+import org.IOOperations.FileToChange;
+import org.IOOperations.OutputFile;
+
 import java.io.IOException;
 import java.util.List;
 
 public class ReadingHostFile {
 
     public static void main(String[] args) throws IOException{
-        System.out.println("Please provide your file: ....");
+        System.out.println("Your file is " +args[0]);
 
-        String absolutePathToFile = "/etc/hosts";
+        String absolutePathToFile;
+
+        try{
+            absolutePathToFile = args[0];
+       } catch(ArrayIndexOutOfBoundsException e){
+           throw new ArrayIndexOutOfBoundsException("your argument is not valid, please try again with only ONE paramter!");
+       }
 
         FileToChange file = new FileToChange(absolutePathToFile);
 
@@ -18,7 +29,5 @@ public class ReadingHostFile {
         }catch (IOException e){
             throw new IOException(" generating files is not working as expected... ",e);
         }
-
-
     }
 }

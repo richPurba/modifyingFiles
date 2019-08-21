@@ -1,3 +1,4 @@
+import org.modifyingfiles.IOOperations.FileToChange;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
