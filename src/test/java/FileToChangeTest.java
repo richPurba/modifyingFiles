@@ -54,9 +54,9 @@ public class FileToChangeTest {
 
     @Test
     public void shouldReadMultipleLines() throws IOException{
-        String ipAddressOne = "12.23.45.55 AVS_GALERA01_SERVICE";
+        String ipAddressOne = "12.23.45.55 AVS_Gee1_SERVICE";
         String ipAddressTwo = "55.33.134.24 SVA_Gs02_SEEEICE";
-        String ipAddressThree = "10.44.231.55 SVA_BSS_LSVSY_SEEEICE";
+        String ipAddressThree = "10.44.231.55 sva_vas_01_sss";
 
         try{
             BufferedWriter writer = new BufferedWriter(new FileWriter(temporaryFile));
