@@ -1,18 +1,23 @@
-import java.util.Scanner;
+import java.io.IOException;
+import java.util.List;
 
 public class ReadingHostFile {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         System.out.println("Please provide your file: ....");
-//        Scanner readerInput = new Scanner(System.in);
-//        String n = readerInput.next("[A-Z]");// possibly not working with '/' character
-//        readerInput.close();
 
-        String pathToFile = "/etc/hosts";
+        String absolutePathToFile = "/etc/hosts";
 
-        FileToChange file = new FileToChange(pathToFile);
+        FileToChange file = new FileToChange(absolutePathToFile);
 
-        file.rewritingFile();
+        List<String> results = file.rewritingFile();
+        OutputFile outputtingFile = new OutputFile("docker.txt");
+
+        try{
+            outputtingFile.generatingFileOuput(results);
+        }catch (IOException e){
+            throw new IOException(" generating files is not working as expected... ",e);
+        }
 
 
     }
