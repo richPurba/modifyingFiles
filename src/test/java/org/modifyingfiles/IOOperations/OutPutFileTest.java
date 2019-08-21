@@ -1,3 +1,5 @@
+package org.modifyingfiles.IOOperations;
+
 import org.modifyingfiles.IOOperations.OutputFile;
 import org.junit.Before;
 import org.junit.Test;
@@ -56,7 +58,7 @@ public class OutPutFileTest {
         List<String> listOfStrings = new ArrayList<String>();
         listOfStrings.add(0,"12.23.45.55 AVS_Gee1_SERVICE");
         listOfStrings.add(1,"55.33.134.24 SVA_Gs02_SEEEICE");
-        listOfStrings.add(2,"10.44.231.55 sva_vas_01_sss");
+        listOfStrings.add(2,"10.44.231.55 sva-vas-01-sss");
 
         try{
             outputFile.generatingFileOuput(listOfStrings);

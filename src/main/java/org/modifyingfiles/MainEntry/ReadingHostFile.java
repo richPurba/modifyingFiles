@@ -1,7 +1,7 @@
-package org.MainEntry;
+package org.modifyingfiles.MainEntry;
 
-import org.IOOperations.FileToChange;
-import org.IOOperations.OutputFile;
+import org.modifyingfiles.IOOperations.FileToChange;
+import org.modifyingfiles.IOOperations.OutputFile;
 
 import java.io.IOException;
 import java.util.List;
@@ -16,7 +16,7 @@ public class ReadingHostFile {
         try{
             absolutePathToFile = args[0];
        } catch(ArrayIndexOutOfBoundsException e){
-           throw new ArrayIndexOutOfBoundsException("your argument is not valid, please try again with only ONE paramter!");
+           throw new ArrayIndexOutOfBoundsException("your argument is not valid, please try again with only ONE parameter!");
        }
 
         FileToChange file = new FileToChange(absolutePathToFile);

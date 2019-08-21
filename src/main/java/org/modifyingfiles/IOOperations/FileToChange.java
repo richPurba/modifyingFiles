@@ -1,4 +1,4 @@
-package org.IOOperations;
+package org.modifyingfiles.IOOperations;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class FileToChange {
             FileInputStream fileInputStream = new FileInputStream(this.pathToFile);
             InputStreamReader inputStream = new InputStreamReader(fileInputStream);
             BufferedReader reader = new BufferedReader(inputStream);
-            Pattern findingPattern = Pattern.compile("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}.\\d{1,3}\\s+\\w+");
+            Pattern findingPattern = Pattern.compile("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}.\\d{1,3}\\s+[a-zA-Z_0-9-]+");
             String data;
 
             while( (data = reader.readLine()) != null){

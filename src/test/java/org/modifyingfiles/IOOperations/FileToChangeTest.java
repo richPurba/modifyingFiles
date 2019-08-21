@@ -1,3 +1,5 @@
+package org.modifyingfiles.IOOperations;
+
 import org.modifyingfiles.IOOperations.FileToChange;
 import org.junit.Before;
 import org.junit.Test;
